@@ -121,14 +121,21 @@ input.onPinPressed(TouchPin.P1, function () {
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     set_timer = set_min * 60 + (set_sec_x10 * 10 + set_sec)
-    while (0 < set_timer) {
-        basic.pause(1000)
-        set_timer += -1
-        set_min = Math.trunc(set_timer / 60)
-        set_sec_x10 = Math.trunc(set_timer % 60 / 10)
-        set_sec = set_timer % 60 % 10
-        点灯_分()
-        点灯_秒()
+    if (!(set_timer == 0)) {
+        music.play(music.tonePlayable(988, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
+        while (0 < set_timer) {
+            basic.pause(1000)
+            set_timer += -1
+            set_min = Math.trunc(set_timer / 60)
+            set_sec_x10 = Math.trunc(set_timer % 60 / 10)
+            set_sec = set_timer % 60 % 10
+            点灯_分()
+            点灯_秒()
+        }
+        for (let index = 0; index < 8; index++) {
+            music.play(music.tonePlayable(988, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
+            basic.pause(200)
+        }
     }
 })
 let set_timer = 0

@@ -1,5 +1,5 @@
 {
-    "name": "Project111111",
+    "name": "micro:bit_timer",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -15,7 +15,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "9.0.3",
+        "target": "9.0.5",
         "targetId": "microbit"
     },
     "supportedTargets": [
