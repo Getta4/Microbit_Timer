@@ -170,6 +170,7 @@ basic.forever(function () {
                 music.play(music.tonePlayable(988, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
                 basic.pause(200)
             }
+            動作 = 0
         }
     }
 })
