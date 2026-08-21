@@ -1,5 +1,6 @@
 
-> このページを開く [https://getta4.github.io/timer/](https://getta4.github.io/timer/)
+<!-- > このページを開く [https://getta4.github.io/timer/](https://getta4.github.io/timer/) -->
+> Makecodeを使用して作成してみたプロジェクトです。下の文章はMakecodeによる自動生成です。
 
 ## 拡張機能として使用
 
